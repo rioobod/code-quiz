@@ -1,17 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Code Quiz</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-    
+
+    <div class="container">
+        <header>
+            <p id="score">View High Scores</p>
+            <p id="time"></p>
+        </header>
+        <main>
+            <section class="main-sections" id="start-quiz-page">
+                <h1>Coding Quiz Challenge</h1>
+                <p>Try to answer the following code related questions within the time limit.<br>
+                    Keep in mind that incorrect answers will penalize your score/time <br>by ten seconds!
+                </p>
+                <button id="start-quiz">Start Quiz</button>
+            </section>
+            <section class="main-sections hide" id="questions-1">
+                <h1 id="question-headings"></h1>
+                <button class="q-btn"></button>
+                <button class="q-btn"></button>
+                <button class="q-btn"></button>
+                <button class="q-btn"></button>
+                <p id="result"></p>
+            </section>
+        </main>
+    </div>
 
 
-
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
+
 </html>
