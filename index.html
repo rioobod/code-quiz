@@ -24,13 +24,28 @@
                 </p>
                 <button id="start-quiz">Start Quiz</button>
             </section>
-            <section class="main-sections hide" id="questions-1">
+            <section class="main-sections hide" id="questions-list">
                 <h1 id="question-headings"></h1>
                 <button class="q-btn"></button>
                 <button class="q-btn"></button>
                 <button class="q-btn"></button>
                 <button class="q-btn"></button>
                 <p id="result"></p>
+            </section>
+            <section class="main-section hide" id="score-result">
+                <h1>Game Over</h1>
+                <h2 class="score-title">Your Score is:</h2>
+                <h3 class="score-value" id="score-val"></h3>
+                <label for="input-initials">
+                    Enter Your Initials
+                    <input type="text" name="input-initials" id="input-initials">
+                </label>
+                <button id="submit-initials">Submit</button>
+            </section>
+            <section class="main-section hide" id="high-score">
+                <h1 class="high-score-title" id="high-score-title">High Scores</h1>
+                <p id="final-score"></p>
+                <button id="reset-btn">Restart</button>
             </section>
         </main>
     </div>
