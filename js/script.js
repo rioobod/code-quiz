@@ -59,6 +59,13 @@ let highScoreSection = document.getElementById("high-score");
 let highScoreField = document.getElementById("final-score");
 let reset_btn = document.getElementById("reset-btn");
 
+let highScore = document.getElementById("score");
+console.log(highScore);
+highScore.addEventListener("click", ()=>{
+    startQuizPage.classList.add("hide");
+    showHighScore();
+});
+
 //global variables
 let curr = 0;
 let score = 0;
@@ -149,7 +156,7 @@ function checkAnswers(event) {
         console.log(`correct answer`)
     } else {
         result.innerHTML = "Incorrect";
-        countDownTimer-= 5;
+        countDownTimer-= 10;
         console.log(`incorrect`)
     }
 
